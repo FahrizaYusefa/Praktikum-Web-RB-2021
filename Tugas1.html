@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pengunjung Perpustakaan</title>
+
+	<style type="text/css">
+		.header{
+			background-image: url(background.jpg);
+			font-style: italic;
+			font-size: 20px;
+			color: white;
+		}
+
+		body{
+			background: linear-gradient(to right, #87CEEB, #B0E0E6);
+		}
+
+		nav{
+			background-color: powderblue;
+
+		}
+
+		#daftar-box{
+			position: relative;
+			background-color: skyblue;
+			padding: 0;
+			margin: 5% auto;
+			height: 300px;
+			width: 600px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+		}
+
+		h2{
+			text-align: center;
+			font-family: sans-serif;
+			font-style: oblique;
+		}
+
+		.pendaftaran li{
+			list-style: none;
+			float: left;
+			padding: 1px 20px;
+		}
+
+		p{
+			text-align: justify;
+			font-size: 17px;
+		}
+
+		footer{
+			background-color: powderblue;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<header id="header">
+		<div class="header">
+			<h1 align="center">PERPUSTAKAAN DAN KEARSIPAN KOTA PADANG PANJANG</h1>
+		</div>
+	</header>
+
+	<nav>
+		<div class="pendaftaran">
+			<ul>
+				<li><a href="https://dpk.padangpanjang.go.id/index/">Home</a></li>
+				<li><a href="https://dpk.padangpanjang.go.id/index/peraturan/">Peraturan</a></li>
+				<li><a href="https://onesearch.id/Repositories/Repository?library_id=4356">Repositori</a></li>
+			</ul>
+		</div>
+		<br>
+	</nav>
+
+	<section>
+		<h2>Selamat Datang di Website Perpustakaan dan Kearsipan Kota Padang Panjang</h2>
+		<p style="text-indent: 25px;"> Perpustakaan adalah sebuah koleksi buku dan majalah. Walaupun dapat diartikan sebagai koleksi pribadi perseorangan, namun perpustakaan lebih umum dikenal sebagai sebuah koleksi besar yang dibiayai dan dioperasikan oleh sebuah kota atau institusi, dan dimanfaatkan oleh masyarakat yang rata-rata tidak mampu membeli sekian banyak buku atas biaya sendiri.</p>
+
+		<p>Pendaftaran Anggota</p>
+		<ol>
+			<p>Petunjuk Pengisian Form</p>
+			<li>Pastikan data yang anda masukkan sesuai kartu identitas yang berlaku, benar, dan dapat dipertanggungjawabkan.</li>
+			<li>Silahkan hubungi bagian layanan Perpustakaan, jika anda pernah mendaftarkan diri sebelumnya namun akun anda tidak aktif.</li>
+			<li>Isi form dengan data yang sebenar-benarnya.</li>
+		</ol>
+
+		<div id="daftar-box">
+			<form action="#" method="GET">
+				<fieldset>
+					<legend>Form Data Diri</legend>
+					<table>
+						<tr>
+							<td>Nama Lengkap</td>
+							<td>:</td>
+							<td><input type="text" name="namalengkap"></td>
+						</tr>
+
+						<tr>
+							<td>Jenis Kelamin</td>
+							<td>:</td>
+							<td>
+								<input type="radio" name="jk" value="Laki-laki">Laki-Laki
+								<input type="radio" name="jk" value="Perempuan">Perempuan
+							</td>
+						</tr>
+
+						<tr>
+							<td>Pekerjaan</td>
+							<td>:</td>
+							<td><input type="text" name="pekerjaan"></td>
+						</tr>
+
+						<tr>
+							<td>No Telepon</td>
+							<td>:</td>
+							<td><input type="num" name="notelepon"></td>
+						</tr>
+
+						<tr>
+							<td>Alamat</td>
+							<td>:</td>
+							<td><textarea name="alamat" placeholder="Tuliskan alamat lengkap" cols="40" rows="5"></textarea></td>
+						</tr>
+
+						<tr>
+							<td>Jenis Anggota</td>
+							<td>:</td>
+							<td>
+								<select name="anggota">
+									<option value="pelajar">Pelajar</option>
+									<option value="mahasiswa">Mahasiswa</option>
+									<option value="umum">Umum</option>
+									<option value="peneliti">Peneliti</option>
+									<option value="karyawan">Karyawan</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Email</td>
+							<td>:</td>
+							<td><input type="text" name="email"></td>
+						</tr>
+					</table>
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+
+	<footer>
+		<a href="#header">Ke bagian Atas</a>
+		<p style="text-align: center;">copyright &copy; 2021</p>
+	</footer>
+
+</body>
+</html>
