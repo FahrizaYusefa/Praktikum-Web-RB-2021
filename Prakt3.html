@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Minggu 3</title>
+</head>
+
+<body id="body">
+    <label for="tema">Pilih jenis tema yang kamu inginkan </label>
+    <select class="selectColor" id="warna" onchange ="changeColor()">
+        <option value="#">select</option>
+        <option value="blue">Biru</option>
+        <option value="black">Hitam</option>
+        <option value="white">Putih</option>
+    </select>
+
+    <div class="tema">
+        <script>
+            function changeColor(){
+                var color = document.getElementById("warna");
+                if (warna.value=="blue"){
+                    document.body.style.backgroundColor = "blue";
+                    document.getElementById("body").style.color = "black";
+                }else if (warna.value=="black"){
+                    document.body.style.backgroundColor = "black";
+                    document.getElementById("body").style.color = "white";
+                }else if (warna.value=="white"){
+                    document.body.style.backgroundColor = "white";
+                    document.getElementById("body").style.color = "black";
+                }
+                else{
+                    document.body.style.backgroundColor = "red";
+                }
+            }
+        </script>
+    </div>
+     
+
+    <h2>This is My Website</h2>
+    <label for="makanan">Pilih jenis makanan daerah yang kamu inginkan </label>
+        <select name="makanan" id="makanan" onchange="makanankhas()">
+            <option value="">select</option>
+            <option value="Rendang">Rendang</option>
+            <option value="Bika Ambon">Bika Ambon</option>
+            <option value="Dodol">Dodol</option>
+            <option value="Pempek">Pempek</option>
+        </select>
+    
+    <p id="makanankhas"></p>
+    <div class="makanankhas">
+        <script>
+        function makanankhas(){
+            var jenismakanan=document.getElementById("makanan");
+            if(jenismakanan.value=="Rendang"){
+                var makanan=document.getElementById("makanankhas");
+                makanan.innerText = "Rendang merupakan makanan Khas Minangkabau.";
+            }else if(jenismakanan.value=="Bika Ambon"){
+                var makanan=document.getElementById("makanankhas");
+                makanan.innerText = "Bika Ambon merupakan makanan khas Medan.";
+            }else if(jenismakanan.value=="Dodol"){
+                var makanan=document.getElementById("makanankhas");
+                makanan.innerText = "Dodol merupakan makanan khas Jakarta.";
+            }else{
+                var makanan=document.getElementById("makanankhas");
+                makanan.innerText = "Pempek merupakan makanan khas Palembang.";
+            }
+        }    
+        </script>
+    </div>
+
+    <div class="container">
+        <label for="faktorial">Input angka yang dicari</label>
+        <form>
+            <input type="text" name="" id="input">
+            <button id="button">hitung</button>
+            <div id="demo"></div>
+        </form>
+
+        <script>
+        var input = document.getElementById("input")
+        var button = document.getElementById("button")
+        var demo = document.getElementById("demo")
+
+        button.addEventListener("click", function(num){
+            num.preventDefault(); 
+            var num_input = input.value;
+            var faktorial = 1;
+            for(var i=num_input; i>0; i--){
+                faktorial *= i;
+            }
+            demo.innerHTML = `Hasil dari Faktorial adalah: ${faktorial}`;
+        })
+        </script>
+    </div>
+
+</body>
+</html>
