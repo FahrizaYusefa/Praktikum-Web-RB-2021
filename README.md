@@ -20,3 +20,7 @@ Nama  : Fahriza Yusefa
 <br>
 NIM   : 119140005
 
+Modifikasi yang dilakukan : 
+1. Menambahkan css
+2. Menambahkan code sesuai dengan modul
+3. Merapikan code
